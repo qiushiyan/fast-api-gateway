@@ -7,4 +7,4 @@ user_route = APIRouter()
 @user_route.get("/")
 def get_user():
     return {"name": "qiushi",
-            "last_login": datetime(2021, 11, 14)}
+            "last_login": "20211114"}

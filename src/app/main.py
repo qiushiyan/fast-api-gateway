@@ -2,7 +2,9 @@ from fastapi import FastAPI
 from .users import user_route
 from mangum import Mangum
 
-app = FastAPI()
+app = FastAPI(
+    root_path="/dev/"
+)
 
 
 @app.get("/")
